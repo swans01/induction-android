@@ -28,4 +28,21 @@ fun main() {
     val user = User("user1", "user@email.com")
     println(user.email)
 
+    //this keyword
+    user.sayHello("User2")
+
+    println("============================")
+
+    //INHERITANCE
+    val manager = Manager("Nick")
+    manager.sayHello("tony")
+    val employee = Employee("employee")
+
+    //properties overriding
+    val rectangle = Rectangle()
+    println(rectangle.corner)
+    val triangle = Triangle()
+    println(triangle.corner)
+    println(triangle.parentCorner)
+
 }
