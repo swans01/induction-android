@@ -17,4 +17,17 @@ class Person {
     fun sayHello(paramFirstName: String, paramLastName: String){
         println("Hello $paramFirstName $paramLastName, my name is $firstName")
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Person
+
+        if (firstName != other.firstName) return false
+
+        return true
+    }
+
+
 }
