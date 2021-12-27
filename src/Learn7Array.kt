@@ -1,6 +1,19 @@
 fun main() {
+    //array is immutable
     val arrayString: Array<String> = arrayOf("Satu", "Dua", "Tiga")
-    val arrayInt: Array<Int> = arrayOf(1, 2, 3)
+    var arrayInt: Array<Int> = arrayOf(1, 2, 3)
+
+    //immutable list
+    val list = listOf<Int>(1,2,4)
+
+    //mutable list
+    val list2 = mutableListOf<Int>(1,2,3)
+    list2.add(4)
+    println(list2.size)
+
+    //set
+    val set = setOf<Int>(2,3,2)
+    println(set)
 
     println(arrayString.get(0))
     arrayString.set(0, "Nol")
